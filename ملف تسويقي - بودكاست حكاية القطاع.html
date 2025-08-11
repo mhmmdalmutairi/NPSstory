@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملف تسويقي - بودكاست حكاية القطاع</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .pulse-slow {
+            animation: pulse 3s infinite;
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 3rem 0;
+        }
+        
+        .pricing-card {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .pricing-card.featured {
+            background: linear-gradient(145deg, #667eea, #764ba2);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+         {
+            body { 
+                font-size: 12px; 
+                line-height: 1.4;
+            }
+            .no-print { 
+                display: none !important; 
+            }
+            .break-before {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    
+    <!-- Header Section -->
+    <div class="gradient-bg text-white min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="container mx-auto px-6 text-center relative z-10 fade-in">
+            <div class="mb-8">
+                <img src="https://page.gensparksite.com/v1/base64_upload/bd88ef9bba1c2d21d9e2452d98bdb835" alt="شعار حكاية القطاع" class="mx-auto mb-6 h-24 rounded-lg pulse-slow">
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-6">
+                بودكاست
+                <span class="block text-yellow-300">حكاية القطاع</span>
+            </h1>
+            <p class="text-2xl md:text-3xl font-light mb-8 opacity-90">
+                المنصة الأولى للحوار النقدي المتخصص في القطاع غير الربحي
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <span class="bg-white bg-opacity-20 backdrop-blur-sm px-6 py-3 rounded-full text-lg">
+                    <i class="fas fa-microphone-alt ml-2"></i>
+                    12 حلقة متخصصة
+                </span>
+                <span class="bg-white bg-opacity-20 backdrop-blur-sm px-6 py-3 rounded-full text-lg">
+                    <i class="fas fa-users ml-2"></i>
+                    10,000+ متابع مستهدف
+                </span>
+                <span class="bg-white bg-opacity-20 backdrop-blur-sm px-6 py-3 rounded-full text-lg">
+                    <i class="fas fa-eye ml-2"></i>
+                    5,000+ مشاهدة لكل حلقة
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">من نحن</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    شراكة استراتيجية بين البنك الثالث ووكالة مُخ لإنتاج أول منصة حوار نقدي متخصص في القطاع غير الربحي
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="card-hover bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">
+                            <i class="fas fa-university text-blue-600 ml-3"></i>
+                            البنك الثالث | صاحب العلامة
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            أول موسوعة رقمية متخصصة في القطاع غير الربحي، يقودها هلال القرشي كرئيس تحرير منذ 2017. 
+                            المنصة تُمكِّن القطاع بالممارسات المثلى والمعرفة العملية.
+                        </p>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">
+                            <i class="fas fa-video text-purple-600 ml-3"></i>
+                            وكالة مُخ | شريك الإنتاج
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            الشريك الاستراتيجي في إنتاج البودكاست، متخصصة في صناعة المحتوى الرقمي والحملات 
+                            الإعلامية المبتكرة للقطاع غير الربحي.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/d7082b60834056fd216d1feeec940ac5" 
+                         alt="فريق التسجيل" 
+                         class="rounded-3xl shadow-2xl mx-auto transform hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">فريق التقديم</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">خبرة استثنائية تجمع بين الأكاديمية والممارسة العملية</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Hilal Al-Qurashi -->
+                <div class="team-member card-hover">
+                    <div class="p-8">
+                        <div class="text-center mb-6">
+                            <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-white text-4xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800">هلال بن حسين القرشي</h3>
+                            <p class="text-blue-600 font-semibold">المؤسس والمقدم الرئيسي</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-briefcase text-blue-500 ml-3"></i>
+                                <span class="text-sm">رئيس تحرير البنك الثالث منذ 2017</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-chart-line text-green-500 ml-3"></i>
+                                <span class="text-sm">رفع مؤشرات التفاعل +300%</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-graduation-cap text-purple-500 ml-3"></i>
+                                <span class="text-sm">8+ سنوات خبرة في المحتوى الرقمي</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hamed Al-Dhiyabi -->
+                <div class="team-member card-hover">
+                    <div class="p-8">
+                        <div class="text-center mb-6">
+                            <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-r from-green-500 to-blue-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-white text-4xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800">حامد الذيابي</h3>
+                            <p class="text-green-600 font-semibold">خبير الاستدامة المالية</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-green-500 ml-3"></i>
+                                <span class="text-sm">ماجستير إدارة المنظمات غير الربحية</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-money-bill-wave text-blue-500 ml-3"></i>
+                                <span class="text-sm">رفع الإيرادات من 600 ألف إلى 6 مليون</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-handshake text-purple-500 ml-3"></i>
+                                <span class="text-sm">إدارة حملات بـ 33 مليون ريال</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mohammed Al-Mutairi -->
+                <div class="team-member card-hover">
+                    <div class="p-8">
+                        <div class="text-center mb-6">
+                            <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-white text-4xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800">محمد المطيري</h3>
+                            <p class="text-purple-600 font-semibold">خبير تطوير الأعمال</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-rocket text-purple-500 ml-3"></i>
+                                <span class="text-sm">الرئيس التنفيذي لشركة آزر</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-clock text-green-500 ml-3"></i>
+                                <span class="text-sm">15+ عام خبرة في المبادرات</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-lightbulb text-yellow-500 ml-3"></i>
+                                <span class="text-sm">قائد في الابتكار المؤسسي</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">الرؤية والأثر المنشود</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">نحو قطاع غير ربحي أكثر فعالية وتأثيراً</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://page.gensparksite.com/v1/base64_upload/2133850b30fa272f99297ce771e2a865" 
+                         alt="جلسة حوار تفاعلية" 
+                         class="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="card-hover bg-blue-50 p-6 rounded-xl">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">
+                            <i class="fas fa-target text-blue-600 ml-3"></i>
+                            الأهداف قريبة المدى (2025)
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 ml-3"></i>
+                                12 حلقة متخصصة تُبث كل اثنين
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-users text-blue-500 ml-3"></i>
+                                10,000 متابع متخصص خلال 6 أشهر
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-handshake text-purple-500 ml-3"></i>
+                                شراكات مع 5 مؤسسات رائدة
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-eye text-orange-500 ml-3"></i>
+                                معدل مشاهدة 5,000+ لكل حلقة
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-hover bg-purple-50 p-6 rounded-xl">
+                        <h3 class="text-2xl font-bold text-purple-800 mb-4">
+                            <i class="fas fa-lightbulb text-purple-600 ml-3"></i>
+                            التأثير المستهدف
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-comments text-green-500 ml-3"></i>
+                                تطوير الخطاب المهني للقطاع
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-chart-line text-blue-500 ml-3"></i>
+                                دعم صناع القرار بتحليلات معمقة
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-link text-purple-500 ml-3"></i>
+                                ربط الرواد بقيادات المستقبل
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-network-wired text-orange-500 ml-3"></i>
+                                بناء مجتمع معرفي متكامل
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">الجمهور المستهدف</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">قادة ومتخصصون في القطاع غير الربحي</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center card-hover bg-white p-8 rounded-2xl">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-user-tie text-blue-600 text-2xl"></i>
+                    </div>
+                    <div class="stats-number">35%</div>
+                    <p class="font-semibold text-gray-800">القيادات التنفيذية</p>
+                    <p class="text-sm text-gray-600">في المنظمات غير الربحية</p>
+                </div>
+                
+                <div class="text-center card-hover bg-white p-8 rounded-2xl">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-green-600 text-2xl"></i>
+                    </div>
+                    <div class="stats-number">25%</div>
+                    <p class="font-semibold text-gray-800">الأكاديميون</p>
+                    <p class="text-sm text-gray-600">والباحثون المتخصصون</p>
+                </div>
+                
+                <div class="text-center card-hover bg-white p-8 rounded-2xl">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-purple-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-building text-purple-600 text-2xl"></i>
+                    </div>
+                    <div class="stats-number">25%</div>
+                    <p class="font-semibold text-gray-800">موظفو المركز الوطني</p>
+                    <p class="text-sm text-gray-600">والجهات الحكومية</p>
+                </div>
+                
+                <div class="text-center card-hover bg-white p-8 rounded-2xl">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-orange-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-rocket text-orange-600 text-2xl"></i>
+                    </div>
+                    <div class="stats-number">15%</div>
+                    <p class="font-semibold text-gray-800">رواد الأعمال</p>
+                    <p class="text-sm text-gray-600">الاجتماعية والمستثمرين</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Packages -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">مسارات الشراكة والرعاية</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">اختر المستوى المناسب لأهدافك التسويقية</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Silver Package -->
+                <div class="pricing-card card-hover p-8 rounded-2xl">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">الشراكة المعرفية</h3>
+                        <p class="text-gray-600">المستوى الفضي</p>
+                        <div class="mt-4">
+                            <span class="text-4xl font-bold text-gray-800">15,000</span>
+                            <span class="text-gray-600"> ريال/حلقة</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-microphone text-green-500 ml-3"></i>
+                            استضافة خبراء من المؤسسة
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-book text-blue-500 ml-3"></i>
+                            مشاركة في المحتوى التعليمي
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-certificate text-purple-500 ml-3"></i>
+                            الإشارة كمصدر معرفي موثوق
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-chart-bar text-orange-500 ml-3"></i>
+                            تقرير شهري مبسط
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Gold Package -->
+                <div class="pricing-card card-hover p-8 rounded-2xl border-2 border-yellow-400">
+                    <div class="text-center mb-6">
+                        <div class="inline-block bg-yellow-400 text-white px-4 py-1 rounded-full text-sm font-bold mb-2">الأكثر شعبية</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">الرعاية الموضوعية</h3>
+                        <p class="text-gray-600">المستوى الذهبي</p>
+                        <div class="mt-4">
+                            <span class="text-4xl font-bold text-gray-800">25,000</span>
+                            <span class="text-gray-600"> ريال/حلقة</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-bullseye text-green-500 ml-3"></i>
+                            رعاية 3-6 حلقات متخصصة
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-volume-up text-blue-500 ml-3"></i>
+                            ذكر مخصص (60 ثانية)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-share-alt text-purple-500 ml-3"></i>
+                            مشاركة في المحتوى التسويقي
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-user-plus text-orange-500 ml-3"></i>
+                            استضافة خبير من المؤسسة
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Platinum Package -->
+                <div class="pricing-card featured card-hover p-8 rounded-2xl text-white">
+                    <div class="text-center mb-6">
+                        <div class="inline-block bg-white bg-opacity-20 text-white px-4 py-1 rounded-full text-sm font-bold mb-2">حصري</div>
+                        <h3 class="text-2xl font-bold mb-2">الرعاية الحصرية</h3>
+                        <p class="opacity-90">المستوى البلاتيني</p>
+                        <div class="mt-4">
+                            <span class="text-4xl font-bold">180,000</span>
+                            <span class="opacity-90"> ريال/موسم</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-crown text-yellow-300 ml-3"></i>
+                            رعاية موسم كامل (12 حلقة)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-star text-yellow-300 ml-3"></i>
+                            ظهور في جميع المنصات
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-video text-yellow-300 ml-3"></i>
+                            حلقة مخصصة مع القيادات
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-analytics text-yellow-300 ml-3"></i>
+                            تقرير ربع سنوي مفصل
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-crosshairs text-yellow-300 ml-3"></i>
+                            استهداف مخصص للجمهور
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Plan -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">خطة المحتوى</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">الموسم الأول - 12 حلقة متخصصة</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div class="card-hover bg-white p-6 rounded-2xl border-r-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">
+                            <i class="fas fa-coins text-blue-500 ml-3"></i>
+                            التمويل والاستدامة المالية
+                        </h3>
+                        <p class="text-gray-600 mb-3">4 حلقات تغطي:</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• إدارة الأوقاف والصناديق الاستثمارية</li>
+                            <li>• نماذج الاستدامة المالية المبتكرة</li>
+                            <li>• التمويل الجماعي والتقنيات المالية</li>
+                            <li>• الشراكات بين القطاعات</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-hover bg-white p-6 rounded-2xl border-r-4 border-green-500">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">
+                            <i class="fas fa-chart-line text-green-500 ml-3"></i>
+                            القياس وإدارة الأداء
+                        </h3>
+                        <p class="text-gray-600 mb-3">3 حلقات تغطي:</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• مؤشرات الأداء الرئيسية</li>
+                            <li>• قياس الأثر الاجتماعي</li>
+                            <li>• التقنيات الحديثة في تحليل البيانات</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="card-hover bg-white p-6 rounded-2xl border-r-4 border-purple-500">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">
+                            <i class="fas fa-users-cog text-purple-500 ml-3"></i>
+                            القيادة والحوكمة
+                        </h3>
+                        <p class="text-gray-600 mb-3">3 حلقات تغطي:</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• نماذج الحوكمة المؤسسية</li>
+                            <li>• تطوير القيادات وإدارة التغيير</li>
+                            <li>• الشفافية والمساءلة</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-hover bg-white p-6 rounded-2xl border-r-4 border-orange-500">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">
+                            <i class="fas fa-rocket text-orange-500 ml-3"></i>
+                            الابتكار والتحول الرقمي
+                        </h3>
+                        <p class="text-gray-600 mb-3">2 حلقة تغطي:</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• التقنيات الناشئة في القطاع</li>
+                            <li>• نماذج العمل المبتكرة والريادة الاجتماعية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <div class="inline-flex items-center space-x-8 bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="text-center">
+                        <i class="fas fa-calendar text-blue-500 text-2xl mb-2"></i>
+                        <p class="text-sm font-semibold">كل يوم اثنين</p>
+                        <p class="text-xs text-gray-600">8 مساءً</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-clock text-green-500 text-2xl mb-2"></i>
+                        <p class="text-sm font-semibold">90-120 دقيقة</p>
+                        <p class="text-xs text-gray-600">لكل حلقة</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-play text-purple-500 text-2xl mb-2"></i>
+                        <p class="text-sm font-semibold">متعدد المنصات</p>
+                        <p class="text-xs text-gray-600">يوتيوب، تويتر، لينكد إن</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Production Quality -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">جودة الإنتاج</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">معايير احترافية عالية تضمن تجربة مميزة</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://page.gensparksite.com/v1/base64_upload/96fa4844748667cfd6007aecbfabb465" 
+                         alt="جودة الإنتاج" 
+                         class="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-microphone text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">معدات احترافية</h3>
+                            <p class="text-gray-600">ميكروفونات RODE، إضاءة استوديو متقدمة، تسجيل 4K</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-volume-up text-green-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">جودة صوتية متميزة</h3>
+                            <p class="text-gray-600">تسجيل ومعالجة صوتية بمعايير الاستوديو المهني</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-palette text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">هوية بصرية موحدة</h3>
+                            <p class="text-gray-600">تصميم احترافي وجذاب مع عناصر بصرية متسقة</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-home text-orange-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">بيئة مثالية</h3>
+                            <p class="text-gray-600">استوديو أنيق مع ديكور راقي يشجع على الحوار المفتوح</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-gradient-to-r from-blue-50 to-purple-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">لماذا تختار حكاية القطاع؟</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">القيمة المضافة الحقيقية لشراكتك معنا</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center card-hover bg-white p-8 rounded-2xl">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-bullseye text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">جمهور متخصص</h3>
+                    <p class="text-gray-600">95% من المتابعين يعملون في القطاع، 60% في مناصب قيادية</p>
+                </div>
+                
+                <div class="text-center card-hover bg-white p-8 rounded-2xl">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-green-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-certificate text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">مصداقية عالية</h3>
+                    <p class="text-gray-600">خبراء معروفون بالنزاهة والعمق المهني، البنك الثالث مرجع معتمد</p>
+                </div>
+                
+                <div class="text-center card-hover bg-white p-8 rounded-2xl">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-purple-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-chart-line text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">عائد قابل للقياس</h3>
+                    <p class="text-gray-600">تتبع دقيق للتفاعل والوصول، محتوى طويل المدى يُشاهد لأشهر</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-gray-800 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">كن جزءاً من القصة</h2>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                    انضم إلى رحلتنا في تطوير أهم قطاع في رؤية 2030
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://page.gensparksite.com/v1/base64_upload/8fe57cc5ac4f669cfcb1dd13637a5d51" 
+                         alt="الفريق جاهز للتعاون" 
+                         class="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4">
+                            <i class="fas fa-university text-blue-400 ml-3"></i>
+                            البنك الثالث لتمكين القطاع غير الربحي
+                        </h3>
+                        <div class="space-y-3">
+                            <p class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-blue-400 ml-3"></i>
+                                المملكة العربية السعودية - الرياض
+                            </p>
+                            <p class="flex items-center">
+                                <i class="fas fa-home text-blue-400 ml-3"></i>
+                                3710 الإمام أحمد بن حنبل - الريان وحدة رقم 8
+                            </p>
+                            <p class="flex items-center">
+                                <i class="fas fa-envelope text-blue-400 ml-3"></i>
+                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="60090e060f205302010e0b4e0f1207">[email&#160;protected]</a>
+                            </p>
+                            <p class="flex items-center">
+                                <i class="fas fa-globe text-blue-400 ml-3"></i>
+                                3bank.org
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white bg-opacity-10 backdrop-blur-sm p-4 rounded-xl text-center">
+                            <i class="fas fa-users text-3xl text-blue-400 mb-2"></i>
+                            <p class="font-bold">10,000+</p>
+                            <p class="text-sm opacity-75">متابع مستهدف</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 backdrop-blur-sm p-4 rounded-xl text-center">
+                            <i class="fas fa-play-circle text-3xl text-green-400 mb-2"></i>
+                            <p class="font-bold">12</p>
+                            <p class="text-sm opacity-75">حلقة متخصصة</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 backdrop-blur-sm p-4 rounded-xl text-center">
+                            <i class="fas fa-eye text-3xl text-purple-400 mb-2"></i>
+                            <p class="font-bold">5,000+</p>
+                            <p class="text-sm opacity-75">مشاهدة/حلقة</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 backdrop-blur-sm p-4 rounded-xl text-center">
+                            <i class="fas fa-handshake text-3xl text-orange-400 mb-2"></i>
+                            <p class="font-bold">5</p>
+                            <p class="text-sm opacity-75">شراكات استراتيجية</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <blockquote class="text-2xl italic font-light opacity-90 max-w-4xl mx-auto leading-relaxed">
+                    "في عصر التحول، نحتاج إلى منصات تجمع بين العمق الأكاديمي والممارسة العملية. 
+                    بودكاست حكاية القطاع يقدم هذا التوازن المطلوب لتطوير قطاع غير ربحي قوي ومستدام."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="opacity-75">
+                هذا العرض سري ومخصص للرعاة المحتملين. جميع المعلومات محمية بحقوق الملكية الفكرية.
+            </p>
+            <p class="mt-2 opacity-50 text-sm">
+                © 2025 البنك الثالث - بودكاست حكاية القطاع. جميع الحقوق محفوظة.
+            </p>
+        </div>
+    </footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDnJnOYzViH2jymwNMHr%2FLJeEb850P6qZ9%2BEc2OFuEJob5bswB8rtbLBoxH%2BHZmro40jnCuiQMpkr%2FpyV4sy%2BRSTz7xg4I1mGALEwkb9swTr7%2BwKp4GVKktKpr8LumMa%2FpDpEDTX3DpSmOKZOJMsdfT6AABu5knuzBMJfT67r2PFGSP5AcLZMZO4%2Fgho3yxRHbmnvfpwMCdbCDjizLX6VSYbBfyx5s0Qn6hydiCftVn8lv5ZUuatovUHdomO9DEYFHRsQhNujvHbiraX5i4vs6id8csyInJ9sdBG8J60y2FMSJnlOyPKHkk8YULd5iHozGN54rJeqocHZdej6QPD3ahzxcnh9vRX1dN5EQ2367P4NUP%2BiONMo9o6zdhzE%2BUUZf%2FkC42bTVI3wRTuI3LVNc6Seylsd1EPbaZ5puzpTe0FS4JZv1JWDyznws%2BvPMRcwminb9%2B5C8vO37kBffAwQFzIDzq2s%2FGRzS2wOIjm6MHIr54JGwobBwcXafQOtYxK1PRCFCrhJ4g5HvyP%2FI8azSvI%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDnJnOYzViH2jymwNMHr/LJeEb850P6qZ9+Ec2OFuEJob5bswB8rtbLBoxH+HZmro40jnCuiQMpkr/pyV4sy+RSTz7xg4I1mGALEwkb9swTr7+wKp4GVKktKpr8LumMa/pDpEDTX3DpSmOKZOJMsdfT6AABu5knuzBMJfT67r2PFGSP5AcLZMZO4/gho3yxRHbmnvfpwMCdbCDjizLX6VSYbBfyx5s0Qn6hydiCftVn8lv5ZUuatovUHdomO9DEYFHRsQhNujvHbiraX5i4vs6id8csyInJ9sdBG8J60y2FMSJnlOyPKHkk8YULd5iHozGN54rJeqocHZdej6QPD3ahzxcnh9vRX1dN5EQ2367P4NUP+iONMo9o6zdhzE+UUZf/kC42bTVI3wRTuI3LVNc6Seylsd1EPbaZ5puzpTe0FS4JZv1JWDyznws+vPMRcwminb9+5C8vO37kBffAwQFzIDzq2s/GRzS2wOIjm6MHIr54JGwobBwcXafQOtYxK1PRCFCrhJ4g5HvyP/I8azSvI=";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
